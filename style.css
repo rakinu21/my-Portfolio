@@ -314,7 +314,126 @@ body{
     50% { border-color: #fff; }
 }
 
+
+/* career css */
+
+.career{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.career-stats{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    color: #5858a4;
+}
+.career-text{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #333;
+}
+
+
+.career-content{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
     
+    
+}
+.career-content-container{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    height: 150px;
+    flex: 1;
+    flex-basis: 200px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 10px 10px;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+
+.career-content-icons{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    font-size: 3rem;
+    color: #a4589b;
+}
+
+.career-year-experience{
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #333;
+}
+
+.career-content-container:nth-child(1) i { color: #007bff; } /* clock */
+.career-content-container:nth-child(2) i { color: #ff9800; } /* medal */
+.career-content-container:nth-child(3) i { color: #4caf50; } /* folder */
+.career-content-container:nth-child(4) i { color: #e91e63; } /* chip */
+
+.career-content-container:nth-child(1) .career-number{
+    font-size: 2rem;
+    color: #333;
+}
+
+.career-content-container:nth-child(2) .career-number{
+    font-size: 2rem;
+    color: #333;
+}
+
+.career-content-container:nth-child(3) .career-number{
+    font-size: 2rem;
+    color: #333;
+}
+
+.career-content-container:nth-child(4) .career-number{
+    font-size: 2rem;
+    color: #333;
+}
+
+.career-info{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.career-number{
+    transition: 0.5s ease-in;
+}
+
+.career-content-container:hover .career-number {
+  color: #fff; 
+}
+
+.career-content-container:hover{
+    background-color: #172534;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* skills info css */
 
