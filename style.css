@@ -211,6 +211,147 @@ body{
 
 
 
+    /* adding media query */
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+   body{
+    flex-direction: column;
+   }
+
+   .header{
+    height: 3rem;
+    max-width: 100%;
+    justify-content:center;
+    padding: 0 30px;
+   }
+
+   .hamburger-icon{
+    display: flex;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+   }
+
+   .side-bar{
+     display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    opacity: 1;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease-in;
+   }
+
+   .side-bar.active{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+   .home{
+    flex: 1;
+    max-width: 100%;
+   }
+
+   .time{
+    font-size: 12px;
+   }
+
+   .skills-info-others{
+    min-width:768px;
+    padding: 30px;
+    overflow: hidden;
+   }
+
+     
+}
+
+@media(max-width: 767px){
+
+  body{
+    flex-direction: column;
+   }
+
+   .header{
+    height: 3rem;
+    max-width: 100%;
+    justify-content:center;
+    padding: 0 30px;
+   }
+
+   .hamburger-icon{
+    display: flex;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+   }
+
+   .side-bar{
+     display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    opacity: 1;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease-in;
+   }
+
+   .side-bar.active{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+   .home{
+    flex: 1;
+    max-width: 100%;
+   }
+
+   .time{
+    font-size: 12px;
+   }
+
+   .skills-info-others{
+    max-width:300px;
+    padding: 30px;
+    overflow: hidden;
+   }
+
+
+.skills-icons i {
+    font-size: 30px; /* adjust size */
+   
+}
+
+.contact-icons{
+   font-size: 1rem;
+}
+
+.career-content{
+    flex-wrap: wrap;
+    padding: 20px ;
+}
+
+.featured-image-container{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.featuted-image{
+    width: 100%;
+    max-height: 100px;
+}
+
+.featured{
+   width: 100%;
+   padding: 30px;
+}
+
+}
+
 
     /* home page css */
 .home{
@@ -819,150 +960,4 @@ border-bottom: 1px solid #333;
     width: 100%;
     font-size: 12px;
     color: grey;
-}
-
-
-
-
-
-
-    /* adding media query */
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-   body{
-    flex-direction: column;
-   }
-
-   .header{
-    height: 3rem;
-    max-width: 100%;
-    justify-content:center;
-    padding: 0 30px;
-   }
-
-   .hamburger-icon{
-    display: flex;
-    font-size: 2rem;
-    color: #333;
-    cursor: pointer;
-   }
-
-   .side-bar{
-     display: flex;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 4;
-    opacity: 1;
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: opacity 0.5s ease-in;
-   }
-
-   .side-bar.active{
-    opacity: 1;
-    transform: translateX(0);
-}
-
-   .home{
-    flex: 1;
-    max-width: 100%;
-   }
-
-   .time{
-    font-size: 12px;
-   }
-
-   .skills-info-others{
-    min-width:768px;
-    padding: 30px;
-    overflow: hidden;
-   }
-
-     
-}
-
-@media(max-width: 767px){
-
-  body{
-    flex-direction: column;
-   }
-
-   .header{
-    height: 3rem;
-    max-width: 100%;
-    justify-content:center;
-    padding: 0 30px;
-   }
-
-   .hamburger-icon{
-    display: flex;
-    font-size: 2rem;
-    color: #333;
-    cursor: pointer;
-   }
-
-   .side-bar{
-     display: flex;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 3;
-    opacity: 1;
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: opacity 0.5s ease-in;
-   }
-
-   .side-bar.active{
-    opacity: 1;
-    transform: translateX(0);
-}
-
-   .home{
-    flex: 1;
-    max-width: 100%;
-   }
-
-   .time{
-    font-size: 12px;
-   }
-
-   .skills-info-others{
-    max-width:300px;
-    padding: 30px;
-    overflow: hidden;
-   }
-
-
-.skills-icons i {
-    font-size: 30px; /* adjust size */
-   
-}
-
-.contact-icons{
-   font-size: 1rem;
-}
-
-.career-content{
-    flex-wrap: wrap;
-    padding: 20px ;
-}
-
-.featured-image-container{
-    max-width: 200px;
-    max-height: 200px;
-}
-
-.featuted-image{
-    width: 100%;
-    max-height: 100px;
-}
-
-.featured{
-   width: 100%;
-   padding: 30px;
-}
-
 }
