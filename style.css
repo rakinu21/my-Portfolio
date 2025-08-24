@@ -558,6 +558,28 @@ body{
    
 }
 
+.skills-name{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+
+.skills-icon{
+    font-size: 1.5rem;
+    color: #333;
+}
+.skills-title{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #333;
+}
 
 .skills{
     width: 100%;
@@ -565,7 +587,7 @@ body{
     flex-direction: column;
     gap: 20px;
     align-items: start;
-    padding: 70px 20px;
+    padding: 70px 20px 30px 20px;
     background-color: #ffffff;
     overflow: hidden;
     position: relative;
@@ -666,4 +688,67 @@ body{
   0% { transform: translateX(-35%); }
 }
 
+.expertise{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.expertise-title-icon{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    align-items: center;
+    text-transform: capitalize;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.expertise-icon{
+    font-weight:bolder;
+}
+
+.expertise-container-content{
+width: 100%;
+padding: 10px 0;
+border-bottom: 1px solid #333;
+}
+
+.expertise-container-icons{
+    width: inherit;
+    display:flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.expertise-title{
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+/* Individual icon colors */
+.fa-code {
+    color: #e34c26; /* orange/red */
+}
+
+.fa-laptop-code {
+    color: #264de4; /* blue */
+}
+
+.fa-server {
+    color: #68a063; /* green */
+}
+
+.fa-object-group {
+    color: #ff69b4; /* pink */
+}
 
